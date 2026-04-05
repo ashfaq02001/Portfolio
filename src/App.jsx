@@ -178,7 +178,7 @@ export default function Portfolio() {
             </div>
             <div className="hero-image-wrap">
               <img
-                src="/ashfaq.png"
+                src="ashfaq.png"
                 alt="Mohammedh Ashfaq — Software Engineer"
                 className="hero-image"
                 loading="eager"
