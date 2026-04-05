@@ -178,7 +178,7 @@ export default function Portfolio() {
             </div>
             <div className="hero-image-wrap">
               <img
-                src="ashfaq.png"
+                src="/Portfolio/ashfaq.png"
                 alt="Mohammedh Ashfaq — Software Engineer"
                 className="hero-image"
                 loading="eager"
@@ -347,7 +347,7 @@ export default function Portfolio() {
               </p>
               <a
                 className="btn-primary"
-                href="/Mohammedh-Ashfaq-CV.pdf"
+                href="/Portfolio/Mohammedh-Ashfaq-CV.pdf"
                 download
                 style={{ marginTop: 24, display: "inline-block" }}
               >
