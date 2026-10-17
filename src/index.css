@@ -305,6 +305,8 @@ h2 {
   overflow: hidden;
   border: 1px solid var(--border2);
   position: relative;
+  box-shadow: 0 20px 40px rgba(12, 12, 18, 0.45);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
 }
 .hero-image-wrap::before {
   content: '';
@@ -315,6 +317,20 @@ h2 {
   z-index: 1;
   pointer-events: none;
 }
+.hero-image-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  pointer-events: none;
+  z-index: 2;
+}
+.hero-image-wrap:hover {
+  transform: translateY(-6px) rotate(-1deg) scale(1.02);
+  box-shadow: 0 28px 50px rgba(108, 99, 255, 0.18);
+  border-color: rgba(108, 99, 255, 0.5);
+}
 
 .hero-image {
   width: 100%;
@@ -322,6 +338,11 @@ h2 {
   object-fit: cover;
   object-position: top center;
   display: block;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+.hero-image-wrap:hover .hero-image {
+  transform: scale(1.05);
+  filter: saturate(1.1) contrast(1.04);
 }
 
 /* ── BUTTONS ────────────────────────────────────────── */

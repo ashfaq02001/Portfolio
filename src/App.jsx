@@ -17,12 +17,23 @@ const data = {
     },
   },
   stats: [
-    { num: "1+",  label: "Years of development experience" },
+    { num: "2+",  label: "Years of development experience" },
     { num: "2",   label: "Projects completed" },
     { num: "3",   label: "Languages spoken" },
-    { num: "BSc", label: "Software Engineering (Reading)" },
+    { num: "1+", label: "Software Engineering" },
   ],
   experience: [
+    {
+      date: "Aug 2026 – Present",
+      role: "Lecturer IT",
+      company: "BCAS Kandy Campus · Full-time · Kandy District, Central Province, Sri Lanka",
+      bullets: [
+        "Conducting lectures for Pearson BTEC HND modules, including Professional Practice, Networking, Security, and UEID",
+        "Delivering both theoretical concepts and practical application for higher education students",
+        "Preparing lecture materials and session content aligned with the BTEC HND curriculum",
+        "Supporting students through coursework and skill development",
+      ],
+    },
     {
       date: "Sep 2024 – Dec 2025",
       role: "Full-Stack Web Developer Intern",
@@ -160,14 +171,15 @@ export default function Portfolio() {
           <div className="hero-glow" aria-hidden="true" />
           <div className="hero-content">
             <div className="hero-text">
-              <div className="hero-eyebrow">Software Engineer · Sri Lanka</div>
+              <div className="hero-eyebrow">IT Lecturer · Software Engineer · Sri Lanka</div>
               <h1>Mohammedh<br /><em>Ashfaq</em></h1>
               <p className="hero-sub">
-                Full-stack web developer building real-world applications with a strong
-                foundation in Java, OOP, and modern web technologies.
+                IT Lecturer and software engineer focused on teaching, building practical
+                digital solutions, and helping students grow through technology and hands-on
+                learning.
               </p>
               <div className="hero-tags">
-                {["React", "Next.js", "TypeScript", "PHP", "MySQL", "Firebase", "Agile"].map((t) => (
+                {["React", "Next.js", "TypeScript", "PHP", "MySQL", "Networking", "IT Teaching", "Curriculum Design", "Student Support", "Agile"].map((t) => (
                   <span className="tag" key={t}>{t}</span>
                 ))}
               </div>
@@ -178,7 +190,7 @@ export default function Portfolio() {
             </div>
             <div className="hero-image-wrap">
               <img
-                src="/Portfolio/ashfaq.png"
+                src="/Portfolio/Ashfaq_img.png"
                 alt="Mohammedh Ashfaq — Software Engineer"
                 className="hero-image"
                 loading="eager"
@@ -197,15 +209,19 @@ export default function Portfolio() {
           <div className="about-grid fade-in">
             <div className="about-text">
               <h2>Building things<br />that matter</h2>
-              <p style={{ marginTop: 16 }}>
-                Motivated Software Engineering undergraduate at Cardiff Metropolitan University,
-                with hands-on experience across full-stack web development and a passion for
-                crafting clean, scalable solutions.
+              <p style={{ marginTop: 16, textAlign: 'justify' }}>
+                I am a Software Engineering graduate from Cardiff Metropolitan University,
+                currently serving as a Lecturer in IT at BCAS Kandy Campus. My work blends
+                software development, higher education, and practical technology training,
+                allowing me to support both students and digital solutions with a strong
+                technical foundation.
               </p>
-              <p>
-                Experienced in teaching ICT concepts to O/L and A/L students — which sharpened
-                my ability to break down complex ideas clearly. I thrive in Agile teams and love
-                turning ideas into working software.
+              <p style={{ textAlign: 'justify' }}>
+                With experience in full-stack web development, ICT tutoring, and teaching
+                Pearson BTEC HND modules, I am passionate about simplifying technical concepts,
+                mentoring learners, and building solutions that are reliable, scalable, and
+                purposeful. I enjoy working in collaborative environments where learning and
+                innovation go hand in hand.
               </p>
               <div className="langs" style={{ marginTop: 20 }}>
                 {["English", "Tamil", "Sinhala"].map((l) => (
@@ -340,10 +356,11 @@ export default function Portfolio() {
           <div className="contact-inner fade-in">
             <div className="contact-text">
               <h2>Let's work<br />together</h2>
-              <p style={{ marginTop: 16 }}>
-                I'm currently open to internships, freelance projects, and full-time
-                opportunities. Feel free to reach out — I'd love to connect and discuss
-                how I can contribute.
+              <p style={{ marginTop: 16, textAlign: 'justify' }}>
+                I'm an IT Lecturer and software engineering graduate with experience in
+                teaching, web development, and project-based learning. I’m open to
+                collaborations, freelance work, mentoring, and opportunities in education,
+                IT training, and software development.
               </p>
               <a
                 className="btn-primary"
